@@ -31,3 +31,10 @@ SingletonSample.innerClass();
 ````
 SingletonSample.enumSingletonClass();
 ````
+
+享元模式
+-
+享元模式
+````
+ FlyweightSample.flyweight();
+````
