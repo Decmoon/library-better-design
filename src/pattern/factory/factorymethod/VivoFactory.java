@@ -1,6 +1,6 @@
 package pattern.factory.factorymethod;
 
-import storage.entity.Vivo;
+import storage.entity.VivoPhone;
 
 /**
  * 工厂方法模式
@@ -11,7 +11,7 @@ import storage.entity.Vivo;
  */
 public class VivoFactory {
 
-    public Vivo getPhone() {
-        return new Vivo();
+    public VivoPhone getPhone() {
+        return new VivoPhone();
     }
 }

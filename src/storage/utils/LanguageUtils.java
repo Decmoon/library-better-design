@@ -7,6 +7,7 @@ package storage.utils;
  */
 public class LanguageUtils {
 
-    private  LanguageUtils(){}
+    private LanguageUtils() {
+    }
 
 }

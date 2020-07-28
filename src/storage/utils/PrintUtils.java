@@ -3,6 +3,7 @@ package storage.utils;
 import storage.configuration.Language;
 
 public class PrintUtils {
+
     private PrintUtils() {
     }
 

@@ -1,8 +1,8 @@
 package pattern.factory.staticfactory;
 
 import storage.configuration.Brand;
-import storage.entity.Oppo;
-import storage.entity.Vivo;
+import storage.entity.OppoPhone;
+import storage.entity.VivoPhone;
 import storage.series.Phone;
 
 /**
@@ -24,9 +24,9 @@ public class Simplest {
 
         switch (brand) {
             case OPPO:
-                return new Oppo();
+                return new OppoPhone();
             case VIVO:
-                return new Vivo();
+                return new VivoPhone();
             default:
                 break;
         }

@@ -1,6 +1,6 @@
 package pattern.factory.factorymethod;
 
-import storage.entity.Oppo;
+import storage.entity.OppoPhone;
 
 /**
  * 工厂方法模式
@@ -10,7 +10,7 @@ import storage.entity.Oppo;
  * @author decmoon
  */
 public class OppoFactory {
-    public Oppo getPhone() {
-        return new Oppo();
+    public OppoPhone getPhone() {
+        return new OppoPhone();
     }
 }

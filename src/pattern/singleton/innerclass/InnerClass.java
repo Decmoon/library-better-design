@@ -17,6 +17,5 @@ public class InnerClass {
 
     private static class inner {
         private final static InnerClass innerclass = new InnerClass();
-
     }
 }

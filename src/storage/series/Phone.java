@@ -23,7 +23,6 @@ public abstract class Phone implements ElectronicProduct {
 
     //------ getter and setter --------------
 
-
     public void setCPU(storage.configuration.CPU cpu) {
         this.cpu = cpu;
     }
@@ -32,7 +31,7 @@ public abstract class Phone implements ElectronicProduct {
         this.battery = battery;
     }
 
-    public void setBrand(Brand brand) {
+    protected void setBrand(Brand brand) {
         this.brand = brand;
     }
 
@@ -79,6 +78,22 @@ public abstract class Phone implements ElectronicProduct {
     }
 
     public String info(Language language) {
-        return toString();
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(TO_STRING);
+        if (Objects.nonNull(brand)) {
+            stringBuilder.append(getBrand(language));
+        }
+        stringBuilder.append("[");
+        if (Objects.nonNull(cpu)) {
+            stringBuilder.append("cpu=" + getCPU(language))
+                    .append(" | ");
+        }
+        if (Objects.nonNull(battery)) {
+            stringBuilder.append("Battery=" + getBattery(language))
+                    .append(" | ");
+        }
+        stringBuilder.append("hashCode=" + Integer.toHexString(hashCode()))
+                .append("]");
+        return stringBuilder.toString();
     }
 }

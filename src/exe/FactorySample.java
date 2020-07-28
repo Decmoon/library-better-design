@@ -4,7 +4,6 @@ import pattern.factory.factorymethod.OppoFactory;
 import pattern.factory.factorymethod.VivoFactory;
 import pattern.factory.staticfactory.Simplest;
 import storage.configuration.Brand;
-import storage.configuration.Language;
 import storage.utils.PrintUtils;
 
 import static exe.Main.language;
@@ -14,9 +13,9 @@ import static exe.Main.language;
  *
  * @author decmoon
  */
-public class FactoryMain {
+public class FactorySample {
 
-    private FactoryMain() {
+    private FactorySample() {
     }
 
     public static void simplestFactory() {
