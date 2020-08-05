@@ -5,7 +5,7 @@ package storage.configuration;
  *
  * @author decmoon
  */
-public enum Displayer {
+public enum Displayer implements Enumeration {
 
     SAMSUNG("SAMSUNG", "三星"),
     LENOVO("Lenovo", "联想");
@@ -18,10 +18,12 @@ public enum Displayer {
         this.chineseName = chineseName;
     }
 
+    @Override
     public String getEnglishName() {
         return englishName;
     }
 
+    @Override
     public String getChineseName() {
         return chineseName;
     }

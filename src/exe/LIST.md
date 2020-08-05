@@ -44,3 +44,9 @@ SingletonSample.enumSingletonClass();
 ````
  ObserverSample.observer();
 ````
+桥接模式
+-
+桥接模式
+````
+ BridgeSample.bridge();
+````

@@ -5,7 +5,7 @@ package storage.configuration;
  *
  * @author decmoon
  */
-public enum CPU {
+public enum CPU implements Enumeration {
 
     INTEL("Intel", "英特尔"),
     LOONGSON("Loongson", "龙芯");
@@ -19,10 +19,12 @@ public enum CPU {
         this.chineseName = chineseName;
     }
 
+    @Override
     public String getEnglishName() {
         return englishName;
     }
 
+    @Override
     public String getChineseName() {
         return chineseName;
     }

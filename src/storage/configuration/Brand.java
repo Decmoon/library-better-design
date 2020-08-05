@@ -5,7 +5,7 @@ package storage.configuration;
  *
  * @author decmoon
  */
-public enum Brand {
+public enum Brand implements Enumeration {
 
     LENOVO("Lenovo", "联想"),
     VIVO("Vivo", "Vivo"),
@@ -20,10 +20,12 @@ public enum Brand {
         this.chineseName = chineseName;
     }
 
+    @Override
     public String getEnglishName() {
         return englishName;
     }
 
+    @Override
     public String getChineseName() {
         return chineseName;
     }

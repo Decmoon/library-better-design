@@ -5,8 +5,10 @@ package storage.configuration;
  *
  * @author decmoon
  */
-public enum GPU {
+public enum GPU implements Enumeration {
+
     NVIDIA("NVIDIA", "英伟达");
+
     private String englishName;
     private String chineseName;
 
@@ -15,10 +17,12 @@ public enum GPU {
         this.chineseName = chineseName;
     }
 
+    @Override
     public String getEnglishName() {
         return englishName;
     }
 
+    @Override
     public String getChineseName() {
         return chineseName;
     }

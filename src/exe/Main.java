@@ -18,6 +18,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-        ObserverSample.observer();
+        BridgeSample.bridge();
     }
 }

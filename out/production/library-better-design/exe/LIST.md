@@ -38,3 +38,15 @@ SingletonSample.enumSingletonClass();
 ````
  FlyweightSample.flyweight();
 ````
+观察者模式
+-
+观察者模式
+````
+ ObserverSample.observer();
+````
+桥接模式
+-
+桥接模式
+````
+ BridgeSample.bridge();
+````

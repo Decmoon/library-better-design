@@ -5,7 +5,7 @@ package storage.configuration;
  *
  * @author decmoon
  */
-public enum Mainboard {
+public enum Mainboard implements Enumeration {
 
     MICRO_STAR("Micro-Star International Co., Ltd.", "微星"),
     ASUS("ASUS", "华硕");
@@ -18,10 +18,12 @@ public enum Mainboard {
         this.chineseName = chineseName;
     }
 
+    @Override
     public String getEnglishName() {
         return englishName;
     }
 
+    @Override
     public String getChineseName() {
         return chineseName;
     }

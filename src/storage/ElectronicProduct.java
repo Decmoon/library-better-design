@@ -9,5 +9,5 @@ public interface ElectronicProduct {
 
     Integer VOLTAGE = 120;
     String UNIT = "V";
-    String TO_STRING="  ";
+    String TO_STRING = "  ";
 }

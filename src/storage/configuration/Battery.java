@@ -5,7 +5,7 @@ package storage.configuration;
  *
  * @author decmoon
  */
-public enum Battery {
+public enum Battery implements Enumeration {
     PISEN("PISEN", "品胜");
 
     private String englishName;
@@ -16,10 +16,12 @@ public enum Battery {
         this.chineseName = chineseName;
     }
 
+    @Override
     public String getEnglishName() {
         return englishName;
     }
 
+    @Override
     public String getChineseName() {
         return chineseName;
     }

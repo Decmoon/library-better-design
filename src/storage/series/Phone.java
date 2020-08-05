@@ -39,42 +39,21 @@ public abstract class Phone implements ElectronicProduct {
         if (Objects.isNull(cpu)) {
             return "";
         }
-        switch (language) {
-            case ENGLISH:
-                return cpu.getEnglishName();
-            case CHINESE:
-                return cpu.getChineseName();
-            default:
-                return cpu.getEnglishName();
-        }
+        return cpu.getName(language);
     }
 
     public String getBattery(Language language) {
         if (Objects.isNull(battery)) {
             return "";
         }
-        switch (language) {
-            case ENGLISH:
-                return battery.getEnglishName();
-            case CHINESE:
-                return battery.getChineseName();
-            default:
-                return battery.getEnglishName();
-        }
+        return battery.getName(language);
     }
 
     public String getBrand(Language language) {
         if (Objects.isNull(brand)) {
             return "";
         }
-        switch (language) {
-            case ENGLISH:
-                return brand.getEnglishName();
-            case CHINESE:
-                return brand.getChineseName();
-            default:
-                return brand.getEnglishName();
-        }
+        return brand.getName(language);
     }
 
     public String info(Language language) {
