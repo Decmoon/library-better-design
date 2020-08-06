@@ -50,3 +50,9 @@ SingletonSample.enumSingletonClass();
 ````
  BridgeSample.bridge();
 ````
+装饰模式/装饰者模式
+-
+桥接模式
+````
+ BridgeSample.bridge();
+````
