@@ -1,5 +1,6 @@
-package exe;
+package exe.sample;
 
+import exe.Main;
 import storage.configuration.CPU;
 import storage.configuration.Displayer;
 import storage.configuration.GPU;

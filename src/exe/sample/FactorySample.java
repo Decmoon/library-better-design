@@ -1,4 +1,4 @@
-package exe;
+package exe.sample;
 
 import pattern.factory.factorymethod.OppoFactory;
 import pattern.factory.factorymethod.VivoFactory;
@@ -20,19 +20,19 @@ public class FactorySample {
 
     public static void simplestFactory() {
         PrintUtils.println(language, "simplestFactory:", "简单/静态工厂模式");
-        //----------- 取出 OPPO ---
+        //取出 OPPO
         System.out.println(Simplest.switchPhone(Brand.OPPO).info(language));
-        //----------- 取出 VIVO ---
+        //取出 VIVO
         System.out.println(Simplest.switchPhone(Brand.VIVO).info(language));
     }
 
 
     public static void factoryMethod() {
         PrintUtils.println(language, "FactoryMethods:", "工厂方法模式");
-        //----------- 取出 OPPO ---
+        //取出 OPPO
         OppoFactory oppoFactory = new OppoFactory();
         System.out.println(oppoFactory.getPhone().info(language));
-        //----------- 取出 VIVO ---
+        //取出 VIVO
         VivoFactory vivoFactory = new VivoFactory();
         System.out.println(vivoFactory.getPhone().info(language));
     }

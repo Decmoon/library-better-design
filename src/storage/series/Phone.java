@@ -5,6 +5,7 @@ import storage.configuration.Battery;
 import storage.configuration.Brand;
 import storage.configuration.CPU;
 import storage.configuration.Language;
+import storage.utils.LanguageUtils;
 
 import java.util.Objects;
 
@@ -20,6 +21,33 @@ public abstract class Phone implements ElectronicProduct {
     protected Battery battery;
     /** 品牌 */
     protected Brand brand;
+
+    //------ override -----------
+
+    @Override
+    public void turnOn(Language language) {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append('[')
+                .append(getBrand(language))
+                .append(']')
+                .append(
+                        LanguageUtils.of(language, "phone --> turn on", "手机 --> 启动")
+                );
+        System.out.println(stringBuilder.toString());
+    }
+
+    @Override
+    public void turnOff(Language language) {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append('[')
+                .append(getBrand(language))
+                .append(']')
+                .append(
+                        LanguageUtils.of(language, "phone --> turn off", "手机 --> 关机")
+                );
+        System.out.println(stringBuilder.toString());
+    }
+
 
     //------ getter and setter --------------
 
@@ -75,4 +103,6 @@ public abstract class Phone implements ElectronicProduct {
                 .append("]");
         return stringBuilder.toString();
     }
+
+
 }

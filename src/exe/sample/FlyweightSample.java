@@ -1,5 +1,6 @@
-package exe;
+package exe.sample;
 
+import exe.Main;
 import pattern.flyweight.Flyweight;
 import storage.entity.OppoPhone;
 import storage.entity.VivoPhone;

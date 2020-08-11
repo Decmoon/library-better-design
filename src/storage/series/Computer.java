@@ -2,6 +2,7 @@ package storage.series;
 
 import storage.ElectronicProduct;
 import storage.configuration.*;
+import storage.utils.LanguageUtils;
 
 import java.util.Objects;
 
@@ -21,6 +22,34 @@ public abstract class Computer implements ElectronicProduct {
     storage.configuration.GPU gpu;
     /** 品牌 */
     Brand brand;
+
+    //------ override -----------
+
+    @Override
+    public void turnOn(Language language) {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append('[')
+                .append(getBrand(language))
+                .append(']')
+                .append(
+                        LanguageUtils.of(language, "computer --> turn on", "电脑 --> 启动")
+                );
+        System.out.println(stringBuilder.toString());
+    }
+
+    @Override
+    public void turnOff(Language language) {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append('[')
+                .append(getBrand(language))
+                .append(']')
+                .append(
+                        LanguageUtils.of(language, "computer --> turn off", "电脑 --> 关机")
+                );
+        System.out.println(stringBuilder.toString());
+    }
+
+    //--------- getter and setter -------------
 
     public void setCPU(storage.configuration.CPU cpu) {
         this.cpu = cpu;

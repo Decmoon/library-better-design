@@ -56,3 +56,9 @@ SingletonSample.enumSingletonClass();
 ````
  BridgeSample.bridge();
 ````
+状态模式
+-
+状态模式
+````
+ StateSample.state();
+````

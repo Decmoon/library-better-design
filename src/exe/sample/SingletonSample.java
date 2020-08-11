@@ -1,4 +1,4 @@
-package exe;
+package exe.sample;
 
 import pattern.singleton.dynamicload.DynamicLoad;
 import pattern.singleton.enumsingleton.EnumSingletonClass;

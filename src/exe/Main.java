@@ -1,5 +1,7 @@
 package exe;
 
+import exe.sample.DecoratorSample;
+import exe.sample.StateSample;
 import storage.configuration.Language;
 
 /**
@@ -14,10 +16,10 @@ public class Main {
      * <p>
      * Change the language you are using
      */
-    protected final static Language language = Language.CHINESE;
+    public final static Language language = Language.CHINESE;
 
 
     public static void main(String[] args) {
-        DecoratorSample.decorator();
+        StateSample.state();
     }
 }

@@ -1,11 +1,13 @@
-package exe;
+package exe.sample;
 
+import exe.Main;
 import pattern.decorator.ComputerPreInstalledNetEMusic;
 import pattern.decorator.ComputerPreInstalledQQ;
 import pattern.decorator.ComputerPreInstalledWeChat;
 import storage.entity.LenovoComputer;
 import storage.entity.SamsungComputer;
 import storage.series.Computer;
+import storage.utils.PrintUtils;
 
 /**
  * 执行程序-装饰模式
@@ -30,7 +32,7 @@ public class DecoratorSample {
         //软件预安装后的联想电脑
         System.out.println(lenovoComputer.info(Main.language));
 
-        System.out.println("======================================");
+        PrintUtils.hr();
 
         //新建三星电脑[单独实体]
         Computer samsungComputer = new SamsungComputer();

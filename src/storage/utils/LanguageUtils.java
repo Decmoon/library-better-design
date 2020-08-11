@@ -1,5 +1,7 @@
 package storage.utils;
 
+import storage.configuration.Language;
+
 /**
  * 语言工具
  *
@@ -8,6 +10,17 @@ package storage.utils;
 public class LanguageUtils {
 
     private LanguageUtils() {
+    }
+
+    public static String of(Language language, String englishMessage, String chineseMessage) {
+        switch (language) {
+            case ENGLISH:
+                return englishMessage;
+            case CHINESE:
+                return chineseMessage;
+            default:
+                return englishMessage;
+        }
     }
 
 }

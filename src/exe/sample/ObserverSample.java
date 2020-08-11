@@ -1,5 +1,6 @@
-package exe;
+package exe.sample;
 
+import exe.Main;
 import pattern.observer.Decmoon;
 import pattern.observer.LibraryBetterDesign;
 import pattern.observer.Observer;
