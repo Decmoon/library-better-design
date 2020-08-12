@@ -2,6 +2,7 @@ package exe;
 
 import exe.sample.DecoratorSample;
 import exe.sample.StateSample;
+import exe.sample.StrategySample;
 import storage.configuration.Language;
 
 /**
@@ -20,6 +21,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-        StateSample.state();
+        StrategySample.strategy();
     }
 }

@@ -18,7 +18,11 @@ Library-better-design
 
 **如果您有更优秀的模式结构欢迎加入到我们当中来**
 
-
-
+推荐&参考
+-
+类型|名称|作者|连接
+:---:|:---:|:---|:---:|
+书籍|EffectiveJava|Joshua Bloch|---
+资料|Waking-Up|wolverinn|[here](https://github.com/wolverinn/Waking-Up/blob/master/Design%20Pattern.md)
 
 

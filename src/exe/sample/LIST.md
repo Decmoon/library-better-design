@@ -2,8 +2,10 @@ LIST
 -
 此清单可以帮助您更快的找到测试用例
 
+
 工厂模式
 -
+
 > 简单工厂模式
 ````
 FactorySample.simplestFactory();
@@ -52,13 +54,19 @@ SingletonSample.enumSingletonClass();
 ````
 装饰模式/装饰者模式
 -
-桥接模式
+装饰模式
 ````
- BridgeSample.bridge();
+DecoratorSample.decorator();
 ````
 状态模式
 -
 状态模式
 ````
  StateSample.state();
+````
+策略模式
+-
+策略模式
+````
+StrategySample.strategy();
 ````
