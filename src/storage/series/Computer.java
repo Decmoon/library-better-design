@@ -49,7 +49,7 @@ public abstract class Computer implements ElectronicProduct {
         System.out.println(stringBuilder.toString());
     }
 
-    //--------- getter and setter -------------
+    //--------- setter -------------
 
     public void setCPU(storage.configuration.CPU cpu) {
         this.cpu = cpu;
@@ -70,6 +70,8 @@ public abstract class Computer implements ElectronicProduct {
     protected void setBrand(Brand brand) {
         this.brand = brand;
     }
+
+    //--------------- getter -------------
 
     public String getCPU(Language language) {
         if (Objects.isNull(cpu)) {

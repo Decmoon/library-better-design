@@ -1,28 +1,63 @@
 Library-better-design
 - 
-**Author**：Decmoon
 
-范畴：Java进阶
 
+**AUTHOR:**
+> [<img width="30px" title="Decmoon" src="https://avatars3.githubusercontent.com/u/51840843?s=400&u=d909c885dc61d75a2ca60c6d52c2315714d8bdfe&v=4"/>
+](https://github.com/Decmoon)
+
+范畴
+-
++ Java进阶
++ 设计理念
++ 框架结构
+
+语言支持 
+-
++ English 
++ 中文 
+
+摘要 
+-
 优秀的代码结构经受得起版本的迭代与需求的变更<br/>
 
 本项目会总结Java编程中常用的设计模式、结构思想等以供学习参考<br/>
 
+层级包结构 
+-
+ 
++ **exe** ........................................执行用例包 
+    + sample ...........................用例包
++ **pattern** ..................................设计模式模型包
+    + [pattern name] ................设计模式包
+        + [sub pattern name] ..子模式包
++ **storage** .................................模型用例包
+    + configuration ...................配置包
+    + entity ...............................实体包
+    + series ..............................系列包
+    + utils .................................工具包
++ **doubt** .....................................存疑结构包
+    + [sub doubt] ......................子包
++ **flash** .......................................优秀结构包
+    + [sub flash] ........................子包
 
-文例：
+文例 
+-
 
 + LIST.md ---------快速索引列表
 
 + MYPOINTS.md-------开发者对于该设计思想的观点与实际应用场景分析
 
 
-**如果您有更优秀的模式结构欢迎加入到我们当中来**
-
-推荐&参考
+参考 
 -
 类型|名称|作者|连接
-:---:|:---:|:---|:---:|
+:---:|:---:|:---:|:---:|
 书籍|EffectiveJava|Joshua Bloch|---
-资料|Waking-Up|wolverinn|[here](https://github.com/wolverinn/Waking-Up/blob/master/Design%20Pattern.md)
 
+声明 
+-
+**Copyright © [Decmoon](https://github.com/Decmoon)<br/>**
+**转载请注明出处<br/>**
+**如果您有更优秀的模式结构欢迎探讨沟通 & star支持**
 
