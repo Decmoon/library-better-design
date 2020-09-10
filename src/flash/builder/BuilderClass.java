@@ -41,10 +41,6 @@ public class BuilderClass extends Container {
         this.size = builder.size;
         this.max = builder.max;
         this.min = builder.min;
-
     }
 
-    public static void main(String[] args) {
-        Container a = new BuilderClass.Builder(1,"a",10).builder();
-    }
 }
